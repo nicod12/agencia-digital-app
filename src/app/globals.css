@@ -6,3 +6,6 @@
     color-scheme: dark;
 }
 
+body {
+    overflow-y: auto;
+}

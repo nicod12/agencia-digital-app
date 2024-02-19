@@ -10,7 +10,7 @@ export default function Home() {
     >
 
       <motion.div 
-        className="max-w-sm h-[100vh] lg:max-w-screen-lg rounded overflow-hidden lg:overflow-visible"
+        className="max-w-sm min-h-screen lg:max-w-screen-lg rounded lg:overflow-visible"
         initial={{ opacity: 1, x: "-300%" }}
         animate={{ x: "0",
         position: "fixed",
