@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className} suppressHydrationWarning={true}>
         <main>
-          <section className="container mx-auto items-center g px-8 lg:px-2 xl:px-2 2xl:px-2">
+          <section className="container mx-auto items-center g px-8 xl:px-2 2xl:px-2">
             <Navbar />
             {children}
           </section>
