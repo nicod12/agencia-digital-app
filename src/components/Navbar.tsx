@@ -34,7 +34,7 @@ export default function Navbar() {
                 exit={{ opacity: 0 }}
                >
                    <div className="flex flex-col">
-                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-[14px] sm:text-xl p-20 ${poppins.className} uppercase`}>
+                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-[14px] sm:text-xl px-20 py-16 ${poppins.className} uppercase`}>
                             <li className="my-6 sm:my-4 sm:py-4 px-2 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out ">
                                 Portafolio
                             </li>
