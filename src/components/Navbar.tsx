@@ -59,11 +59,11 @@ export default function Navbar() {
     )
     return (
         <nav 
-            className="shadow-md lg:shadow-none lg:py-4 lg:px-20"
+            className="shadow-md lg:shadow-none lg:py-4"
           
         >
             <motion.section 
-                className="flex justify-between items-center fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-8 lg:px-30"
+                className="flex justify-between fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-4 sm:px-12 lg:px-30"
                 initial={{ opacity: 1, y: "-300%" }}
                 animate={{ y: "0",}}
                 transition={{duration: 0.5, delay:0.2}}
@@ -73,16 +73,16 @@ export default function Navbar() {
                     <Image 
                         width={60}
                         height={20}
-                        className="lg:w-20 xl:w-32 2xl:w-32 " 
+                        className="lg:w-20 xl:w-24 2xl:w-32 " 
                         src="https://i.postimg.cc/QC1rdcMT/cooltext452634920191131.png"
                         alt="logo"
                         
                     />
-                    <span className={`text-[12px] md:text-[15px] lg:text-[15px]  xl:text-[30px] 2xl:text-2xl  ${poppins.className}`}>Agencia Digital</span>
+                    <span className={`text-[12px] md:text-[15px] lg:text-[15px]  xl:text-[15px] 2xl:text-2xl  ${poppins.className}`}>Agencia Digital</span>
                     
                 </div>
                 <div className="flex items-center gap-x-14">
-                        <ul className={`hidden lg:flex xl:flex 2xl:flex flex-row gap-4 justify-between lg:text-[15px] xl:text-[20px] 2xl:text-[20px]  ${poppins.className} uppercase`}>
+                        <ul className={`hidden lg:flex xl:flex 2xl:flex flex-row gap-4 justify-between lg:text-[15px] xl:text-[15px] 2xl:text-[20px]  ${poppins.className} uppercase`}>
                             <li className="hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out cursor-pointer">
                                 Portafolio
                             </li> 
@@ -97,7 +97,7 @@ export default function Navbar() {
                             </li>
                         </ul>
 
-                        <button className="hidden lg:flex xl:flex 2xl:flex border xl:text-[20px] 2xl:text-[20px] border-white rounded uppercase py-1 px-8 hover:bg-[#96449B] hover:border-[#96449B] transition duration-300  hover:text-slate-300">Agendar</button>
+                        <button className="hidden lg:flex xl:flex 2xl:flex border xl:text-[15px] 2xl:text-[20px] border-white rounded uppercase py-1 px-8 hover:bg-[#96449B] hover:border-[#96449B] transition duration-300  hover:text-slate-300">Agendar</button>
                     <button
                       aria-label="icon"
                       type="button"
