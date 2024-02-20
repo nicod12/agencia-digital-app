@@ -34,22 +34,22 @@ export default function Navbar() {
                 exit={{ opacity: 0 }}
                >
                    <div className="flex flex-col">
-                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-xl p-20 ${poppins.className} uppercase`}>
-                            <li className="my-4 py-4 px-2 border-b border-[#30302f] hover:bg-[#252b2e] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out ">
+                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-[14px] sm:text-xl p-20 ${poppins.className} uppercase`}>
+                            <li className="my-6 sm:my-4 sm:py-4 px-2 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out ">
                                 Portafolio
                             </li>
-                            <li className="my-4 py-4 px-2  border-b border-[#30302f] hover:bg-[#252b2e] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
+                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
                                 Servicios
                             </li >
-                            <li className="my-4 py-4 px-2  border-b border-[#30302f] hover:bg-[#252b2e] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
+                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
                                 Como funciona
                             </li>
-                            <li className="my-4 py-4 px-2  border-b border-[#30302f] hover:bg-[#252b2e] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
+                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
                                 Sobre nosotros
                             </li>
                         </ul>
                     <div className="flex justify-center">
-                     <button className="lg:hidden xl:hidden 2xl:hidden text-2xl border border-white hover:bg-[#252b2e] hover:text-slate-200 rounded-md uppercase py-4 px-8">Agendar</button>
+                     <button className="lg:hidden xl:hidden 2xl:hidden text-[14px] sm:text-2xl border border-white hover:bg-[#96449B] hover:border-[#96449B] hover:text-slate-300 rounded-md uppercase py-3 px-6 sm:py-4 sm:px-8">Agendar</button>
                     </div>
                    </div>
                </motion.section>)
