@@ -6,14 +6,14 @@ import React from 'react'
 
 const Containermain = () => {
   return (
-    <section className="mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4">
+    <section className="h-screen mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4">
 
     <motion.div
       className="max-w-auto w-auto lg:max-w-screen-lg rounded"
       initial={{ opacity: 1, x: "-300%" }}
       animate={{
         x: "0",
-        position: "fixed",
+        position: "static",
         transition: { duration: 0.7, delay: 0.8 },
       }}
     >

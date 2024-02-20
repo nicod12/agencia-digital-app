@@ -27,7 +27,7 @@ export default function Navbar() {
         <AnimatePresence>   
            {
             open && ( <motion.section 
-                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[70px] ${open ? "right-0 shadow-lg  " : ""}  w-[300px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
+                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[300px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
                 initial={{ x: 300, opacity: 1 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{duration: 0.5}}
@@ -59,11 +59,11 @@ export default function Navbar() {
     )
     return (
         <nav 
-            className="shadow-md lg:shadow-none lg:py-4"
+            className="shadow-md lg:shadow-none lg:py-4 lg:px-20"
           
         >
             <motion.section 
-                className="flex justify-between items-center fixed lg:static top-4 lg:top-0 left-0 right-0 z-50 px-8 lg:px-0"
+                className="flex justify-between items-center fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-8 lg:px-0"
                 initial={{ opacity: 1, y: "-300%" }}
                 animate={{ y: "0",}}
                 transition={{duration: 0.5, delay:0.2}}
