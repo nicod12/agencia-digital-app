@@ -10,7 +10,7 @@ export default function Home() {
     >
 
       <motion.div 
-        className="max-w-sm min-h-screen lg:max-w-screen-lg rounded lg:overflow-visible"
+        className="max-w-[400px] w-auto lg:max-w-screen-lg rounded"
         initial={{ opacity: 1, x: "-300%" }}
         animate={{ x: "0",
         position: "fixed",
@@ -63,7 +63,7 @@ export default function Home() {
         <Image 
           width={400} 
           height={400}
-          className="w-full lg:w-[400px] "
+          className="w-[250px] lg:w-[400px] "
           src="https://i.postimg.cc/ht22zSyt/buisness.png" alt="Imagen de la tarjeta" />
        </div>
       
