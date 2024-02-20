@@ -63,7 +63,7 @@ export default function Navbar() {
           
         >
             <motion.section 
-                className="flex justify-between items-center fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-8 lg:px-0"
+                className="flex justify-between items-center fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-8 lg:px-30"
                 initial={{ opacity: 1, y: "-300%" }}
                 animate={{ y: "0",}}
                 transition={{duration: 0.5, delay:0.2}}

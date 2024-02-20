@@ -20,7 +20,7 @@ const Containermain = () => {
       <article className="flex flex-col lg:flex-row lg:w-full lg:px-24 2xl:px-0 justify-center">
   
         <div className="sm:flex md:flex md:items-center lg:flex lg:items-center">
-          <div className="px-6 py-4 mt-0 sm:w-1/2 md:w-full lg:mt-4 lg:w-full">
+          <div className="px-6 py-4 mt-0 sm:w-full md:w-full lg:mt-4 lg:w-full">
             <h1 className="font-bold text-xl xl:text-2xl mb-4">Generamos soluciones que orquestan resultados para tu negocio</h1>
             <p className="text-white text-[15px] xl:text-[16px]">
               Utilizamos nuestro pensamiento estratégico para ayudar en la toma de decisiones de tu negocio
@@ -52,7 +52,7 @@ const Containermain = () => {
             </section>
           </div>
   
-          <div className="hidden sm:flex md:flex lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
+          <div className="absolute top-[180px] left-48 sm:top-24 md:top-28 sm:left-80  md:left-[480px] sm:absolute md:absolute sm:flex md:flex lg:static lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
             <Image
               width={400}
               height={400}
