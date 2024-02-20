@@ -6,7 +6,7 @@ import React from 'react'
 
 const Containermain = () => {
   return (
-    <section className="mt-32 lg:mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4">
+    <section className="mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4">
 
     <motion.div
       className="max-w-auto w-auto lg:max-w-screen-lg rounded"
@@ -52,7 +52,7 @@ const Containermain = () => {
             </section>
           </div>
   
-          <div className="w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
+          <div className="hidden sm:flex md:flex lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
             <Image
               width={400}
               height={400}
