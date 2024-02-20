@@ -6,7 +6,7 @@ import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
 export default function Home() {
   return (
     <section 
-      className="mt-32 lg:mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center h-screen"
+      className="mt-32 lg:mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center"
     >
 
       <motion.div 
