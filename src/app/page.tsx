@@ -10,7 +10,7 @@ export default function Home() {
     >
 
       <motion.div 
-        className="max-w-[400px] w-auto lg:max-w-screen-lg rounded"
+        className="max-w-auto w-auto lg:max-w-screen-lg rounded"
         initial={{ opacity: 1, x: "-300%" }}
         animate={{ x: "0",
         position: "fixed",
