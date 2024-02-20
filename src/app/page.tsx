@@ -6,7 +6,7 @@ import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
 export default function Home() {
   return (
     <section 
-      className="mt-32 lg:mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center"
+      className="mt-32 lg:mt-24 xl:mt-28 2xl:mt-28 flex flex-col items-center min-h-[100vh]"
     >
 
       <motion.div 
@@ -18,7 +18,7 @@ export default function Home() {
        }}
 
       >
-      <article className="flex flex-col lg:flex-row lg:w-full lg:px-24 2xl:px-0 justify-center">
+      <article className="flex flex-col  lg:flex-row lg:w-full lg:px-24 2xl:px-0 justify-center">
        <div>
        <div className="px-6 py-4 mt-0 lg:mt-14">
             <h1 className="font-bold text-xl xl:text-2xl mb-4">Generamos soluciones que orquestan resultados para tu negocio</h1>
@@ -59,7 +59,7 @@ export default function Home() {
           </section>
         </div>
        </div>
-       <div className=" lg:bg-[#6244C6] lg:rounded-t-full">
+       <div className=" sm:hidden md:hidden lg:flex lg:bg-[#6244C6] lg:rounded-t-full">
         <Image 
           width={400} 
           height={400}
