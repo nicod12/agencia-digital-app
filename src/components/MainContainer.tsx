@@ -1,8 +1,16 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image";
+import { Poppins } from "next/font/google";
 import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
 import React from 'react'
+
+const poppins = Poppins({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const MainContainer = () => {
   return (
@@ -22,7 +30,7 @@ const MainContainer = () => {
         <div className="sm:flex md:flex md:items-center lg:flex lg:items-center">
           <div className="px-6 py-4 mt-0 sm:w-full md:w-full lg:mt-4 lg:w-full">
             <h1 className="font-bold text-xl xl:text-2xl mb-8">Generamos soluciones que orquestan resultados para tu negocio</h1>
-            <p className="text-white text-[15px] xl:text-[16px] mb-4">
+            <p className={`text-white text-[14px] xl:text-[16px] mb-4 ${poppins.className}`}>
               Utilizamos nuestro pensamiento estratégico para ayudar en la toma de decisiones de tu negocio
             </p>
             <button

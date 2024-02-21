@@ -1,5 +1,13 @@
 import Image from "next/image";
 import { FaArrowDownLong } from "react-icons/fa6";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export  const SecondaryContainer = () => {
   return (
@@ -14,15 +22,15 @@ export  const SecondaryContainer = () => {
               width={100}
               height={20}
               alt="flecha"
-              className="hidden lg:flex w-12 absolute top-64 xl:top-72 2xl:top-52 left-[185px] xl:left-36 2xl:left-[355px]"
+              className="hidden lg:flex w-12 absolute top-64 xl:top-76 2xl:top-48 left-[185px] xl:left-36 2xl:left-[355px]"
             />
             <p className="text-black text-center lg:text-start 2xl:ml-24 lg:ml-20 mt-24 lg:-mt-20 xl:mt-8 2xl:-mt-12 md:mt-32 w-64 xl:w-full 2xl:w-[50%] text-[18px] md:text-[20px] xl:text-2xl  font-bold">Por qué tu negocio necesita el <span className="text-[#5C47C0]">Marketing digital?</span></p>
           </div>
-          <div className=" flex flex-col mx-auto lg:mt-48 border px-8 py-8 sm:py-12 md:py-16 xl:px-8 xl:py-16 2xl:px-8 2xl:py-20 border-black max-w-max sm:w-[70%] sm:h-auto md:w-[70%] md:h-auto lg:w-[40%] lg:h-[50&] xl:w-[40%] xl:h-[450px]  2xl:w-[40%] 2xl:h-[400px] h-auto text-black rounded-md shadow-lg relative">
-            <p className="text-start text-[12px] md:text-[15px] xl:text-[16px] mb-4 font-bold">Invertir en marketing digital es la forma más práctica, directa y actual de llegar al público adecuado para tu negocio. A través de una agencia de marketing como DK Digital, 
+          <div className=" flex flex-col mx-auto lg:mt-36 border px-8 py-8 sm:py-12 md:py-16 xl:px-8 xl:py-16 2xl:px-8 2xl:py-20 border-black max-w-max sm:w-[70%] sm:h-auto md:w-[70%] md:h-auto lg:w-[40%] lg:h-[50&] xl:w-[40%] xl:h-[450px]  2xl:w-[40%] 2xl:h-[400px] h-auto text-black rounded-md shadow-lg relative">
+            <p className={`text-start text-[12px] md:text-[15px] xl:text-[16px] mb-4 font-bold ${poppins.className}`}>Invertir en marketing digital es la forma más práctica, directa y actual de llegar al público adecuado para tu negocio. A través de una agencia de marketing como DK Digital, 
               solo necesitarás proporcionar lo necesario para crear los contenidos y otros servicios necesarios.
             </p>
-            <p className="text-start text-[12px] md:text-[15px] xl:text-[16px]  font-bold">
+            <p className={`text-start text-[12px] md:text-[15px] xl:text-[16px] font-bold ${poppins.className}`}>
               Esto te dará más tiempo para enfocarte en las áreas de tu negocio que solo tú puedes hacer, 
               mientras nosotros trabajamos en mantener a tus clientes bien informados y satisfechos con tu presencia digital.
             </p>
