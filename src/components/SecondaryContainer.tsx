@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export  const SecondaryContainer = () => {
   return (
-    <section className="bg-white  max-w-auto sm:max-w-full h-screen w-auto px-6 relative">
+    <section className="bg-white  max-w-auto sm:max-w-full h-full py-4 w-auto px-6 relative">
       <div>
         <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full border-8 border-white shadow-sm p-4 text-white bg-gradient-to-tr from-[#664BC0] to-[#B155B5] text-lg 2xl:text-xl"><FaArrowDownLong /></span>
       </div>
@@ -24,9 +24,9 @@ export  const SecondaryContainer = () => {
               alt="flecha"
               className="hidden lg:flex w-12 absolute top-64 xl:top-76 2xl:top-48 left-[185px] xl:left-36 2xl:left-[355px]"
             />
-            <p className="text-black text-center lg:text-start 2xl:ml-24 lg:ml-20 mt-24 lg:-mt-20 xl:mt-8 2xl:-mt-12 md:mt-32 w-64 xl:w-full 2xl:w-[50%] text-[18px] md:text-[20px] xl:text-2xl  font-bold">Por qué tu negocio necesita el <span className="text-[#5C47C0]">Marketing digital?</span></p>
+            <p className="text-black text-center lg:text-start 2xl:ml-24 lg:ml-20 mt-16 lg:-mt-20 xl:mt-8 2xl:-mt-12 md:mt-32 w-64 xl:w-full 2xl:w-[50%] text-[18px] md:text-[20px] xl:text-2xl  font-bold">Por qué tu negocio necesita el <span className="text-[#5C47C0]">Marketing digital?</span></p>
           </div>
-          <div className=" flex flex-col mx-auto lg:mt-36 border px-8 py-8 sm:py-12 md:py-16 xl:px-8 xl:py-16 2xl:px-8 2xl:py-20 border-black max-w-max sm:w-[70%] sm:h-auto md:w-[70%] md:h-auto lg:w-[40%] lg:h-[50&] xl:w-[40%] xl:h-[450px]  2xl:w-[40%] 2xl:h-[400px] h-auto text-black rounded-md shadow-lg relative">
+          <div className=" flex flex-col mx-auto  lg:mt-36 border px-8 py-8 sm:py-12 md:py-16 xl:px-8 xl:py-16 2xl:px-8 2xl:py-20 border-black max-w-max sm:w-[70%] sm:h-auto md:w-[70%] md:h-auto lg:w-[40%] lg:h-[50&] xl:w-[40%] xl:h-[450px]  2xl:w-[40%] 2xl:h-[400px] h-auto text-black rounded-md shadow-lg relative">
             <p className={`text-start text-[12px] md:text-[15px] xl:text-[16px] mb-4 font-bold ${poppins.className}`}>Invertir en marketing digital es la forma más práctica, directa y actual de llegar al público adecuado para tu negocio. A través de una agencia de marketing como DK Digital, 
               solo necesitarás proporcionar lo necesario para crear los contenidos y otros servicios necesarios.
             </p>
