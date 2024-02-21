@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export  const SecondaryContainer = () => {
   return (
-    <section className="bg-white  max-w-auto sm:max-w-full h-full py-4 w-auto px-6 relative">
+    <section className="flex flex-col justify-center bg-white  max-w-auto sm:max-w-full h-full lg:h-screen pb-10 w-auto px-6 relative">
       <div>
         <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full border-8 border-white shadow-sm p-4 text-white bg-gradient-to-tr from-[#664BC0] to-[#B155B5] text-lg 2xl:text-xl"><FaArrowDownLong /></span>
       </div>
@@ -22,7 +22,7 @@ export  const SecondaryContainer = () => {
               width={100}
               height={20}
               alt="flecha"
-              className="hidden lg:flex w-12 absolute top-64 xl:top-76 2xl:top-48 left-[185px] xl:left-36 2xl:left-[355px]"
+              className="hidden lg:flex w-12 absolute top-64 xl:top-76 2xl:top-80 left-[185px] xl:left-36 2xl:left-[355px]"
             />
             <p className="text-black text-center lg:text-start 2xl:ml-24 lg:ml-20 mt-16 lg:-mt-20 xl:mt-8 2xl:-mt-12 md:mt-32 w-64 xl:w-full 2xl:w-[50%] text-[18px] md:text-[20px] xl:text-2xl  font-bold">Por qué tu negocio necesita el <span className="text-[#5C47C0]">Marketing digital?</span></p>
           </div>

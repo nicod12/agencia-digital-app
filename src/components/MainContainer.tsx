@@ -33,31 +33,33 @@ const MainContainer = () => {
             <p className={`text-white text-[14px] xl:text-[16px] mb-4 ${poppins.className}`}>
               Utilizamos nuestro pensamiento estratégico para ayudar en la toma de decisiones de tu negocio
             </p>
+           <div className="flex flex-col-reverse lg:flex-col">
             <button
-              className="bg-gradient-to-r hover:bg-gradient-to-r from-[#664BC0] hover:from-[#5a5697] to-[#B155B5] hover:to-[#98439b] hover:transition hover:duration-500 hover:text-slate-300 uppercase py-3 px-8 text-[15px] xl:text-[18px] rounded mt-4"
-            >
-              Agendar un meeting
-            </button>
-            <section className="mt-4 lg:mt-20 xl:mt-20 2xl:mt-20 py-4 flex flex-col md:flex-row lg:flex-row gap-7">
-              <div className="flex items-center">
-                <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
-                  <FiTrendingUp />
-                </span>
-                <h2 className="ml-2">Más Resultados</h2>
-              </div>
-              <div className="flex items-center">
-                <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
-                  <FiSettings />
-                </span>
-                <h2 className="ml-2">Más Estrategia </h2>
-              </div>
-              <div className="flex items-center">
-                <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
-                  <FiPenTool />
-                </span>
-                <h2 className="ml-2">Más Desing</h2>
-              </div>
-            </section>
+                className="bg-gradient-to-r hover:bg-gradient-to-r from-[#664BC0] hover:from-[#5a5697] to-[#B155B5] hover:to-[#98439b] hover:transition hover:duration-500 hover:text-slate-300 uppercase py-3 px-8 text-[15px] xl:text-[18px] rounded mt-8 lg:mt-4 lg:w-[40%]"
+              >
+                Agendar un meeting
+              </button>
+              <section className="mt-4 lg:mt-20 xl:mt-20 2xl:mt-20 py-4 flex flex-col md:flex-row lg:flex-row gap-7">
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiTrendingUp />
+                  </span>
+                  <h2 className="ml-2">Más Resultados</h2>
+                </div>
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiSettings />
+                  </span>
+                  <h2 className="ml-2">Más Estrategia </h2>
+                </div>
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiPenTool />
+                  </span>
+                  <h2 className="ml-2">Más Desing</h2>
+                </div>
+              </section>
+           </div>
           </div>
   
           <div className="absolute hidden  lg:static lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
