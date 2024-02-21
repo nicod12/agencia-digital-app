@@ -5,3 +5,10 @@
 * {
     color-scheme: dark;
 }
+
+@layer utilities {
+    .border-gradient-violet {
+      border-image: linear-gradient(to right, #664BC0, #B155B5);
+      border-image-slice: 1;
+    }
+  }

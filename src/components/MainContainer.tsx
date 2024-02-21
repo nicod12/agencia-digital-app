@@ -4,9 +4,9 @@ import Image from "next/image";
 import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
 import React from 'react'
 
-const Containermain = () => {
+const MainContainer = () => {
   return (
-    <section className="h-screen mt-14 md:mt-32 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4 px-6">
+    <section className="h-screen mt-12  md:mt-32 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4 px-6">
 
     <motion.div
       className="max-w-auto w-auto lg:max-w-screen-lg rounded"
@@ -68,4 +68,4 @@ const Containermain = () => {
   )
 }
 
-export default Containermain
+export default MainContainer
