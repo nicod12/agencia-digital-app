@@ -1,6 +1,9 @@
+"use client"
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { Poppins } from "next/font/google";
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const poppins = Poppins({
   weight: ['400', '700'],
@@ -10,8 +13,18 @@ const poppins = Poppins({
 })
 
 export  const SecondaryContainer = () => {
+
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
-    <section className="flex flex-col justify-center bg-white  max-w-auto sm:max-w-full h-full lg:h-screen pb-10 w-auto px-6 relative">
+    <motion.section 
+      className="flex flex-col justify-center bg-white  max-w-auto sm:max-w-full h-full lg:h-screen pb-10 w-auto px-6 relative"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      transition={{ duration: 2, delay: 0.5 }}
+    >
       <div>
         <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full border-8 border-white shadow-sm p-4 text-white bg-gradient-to-tr from-[#664BC0] to-[#B155B5] text-lg 2xl:text-xl"><FaArrowDownLong /></span>
       </div>
@@ -41,6 +54,6 @@ export  const SecondaryContainer = () => {
           </div>
       </article>
 
-    </section>
+    </motion.section>
   )
 }

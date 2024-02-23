@@ -1,3 +1,6 @@
+"use client"
+import useScrollAnimation from '@/hooks/useScrollAnimation';
+import { motion } from 'framer-motion';
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 
@@ -12,8 +15,18 @@ const poppins = Poppins({
 
 
 export const OurJobs = () => {
+
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
-    <section className="pb-8 lg:h-screen lg:flex  lg:flex-col lg:justify-center  lg:p-0">
+    <motion.section 
+        className="pb-8 lg:h-screen lg:flex lg:flex-col lg:justify-center lg:p-0"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={variants}
+        transition={{ duration: 2, delay: 0.5 }}
+    >
         <article className="text-center lg:mb-14 ">
             <h2 className="text-[18px] mt-20 2xl:text-[24px] font-bold">Nue<span className="border-t-4 border-gradient-violet pt-2">stros trab</span>ajos</h2>
             <p className={`mt-2 px-8 py-2 text-[12px] 2xl:text-[16px] ${poppins.className}`}>Algunos servicios desarrollados para nuestros socios</p>
@@ -44,6 +57,6 @@ export const OurJobs = () => {
                 />
             </div>
         </section>
-    </section>
+    </motion.section>
   )
 }

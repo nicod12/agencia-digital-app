@@ -1,5 +1,8 @@
+"use client"
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Raleway } from "next/font/google";
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const raleway = Raleway({
     weight: ['400', '700'],
@@ -11,8 +14,17 @@ const raleway = Raleway({
 
 
 export const AboutUs = () => {
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-1 lg:h-screen bg-[#5B47C0] pb-4 lg:p-0">
+    <motion.section 
+      className="grid grid-cols-1 sm:grid-cols-1 lg:h-screen bg-[#5B47C0] pb-4 lg:p-0"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      transition={{ duration: 2, delay: 0.5 }}
+    >
     <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center mt-4 lg:px-40 2xl:px-48">
       <Image
         src="https://i.postimg.cc/4350Ygq4/laptop.webp"
@@ -32,6 +44,6 @@ export const AboutUs = () => {
         </p>
       </article>
     </div>
-  </section>
+  </motion.section>
   )
 }

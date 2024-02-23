@@ -23,6 +23,13 @@ export default function Navbar() {
         setOpen((prev) => !prev)
     }
 
+    const links = [
+        {href: "/", text: "Portafolio"},
+        {href: "/", text: "Servicios"},
+        {href: "/", text: "Como funciona"},
+        {href: "/", text: "Sobre nosotros"}
+    ]
+
     const mobileMenu = (
         <AnimatePresence>   
            {
@@ -34,20 +41,14 @@ export default function Navbar() {
                 exit={{ opacity: 0 }}
                >
                    <div className="flex flex-col">
-                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-[14px] sm:text-xl px-20 py-16 ${poppins.className} uppercase`}>
-                            <li className="my-6 sm:my-4 sm:py-4 px-2 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out ">
-                                Portafolio
-                            </li>
-                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
-                                Servicios
-                            </li >
-                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
-                                Como funciona
-                            </li>
-                            <li className="my-6  sm:my-4 sm:py-4  border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out">
-                                Sobre nosotros
-                            </li>
-                        </ul>
+                   <ul className={`grid grid-cols-1 items-center justify-center text-center text-xl px-10 py-4 ${poppins.className} uppercase`}>
+                    {links.map((link, index) => (
+                        <li key={index} className={`my-6 sm:my-4 sm:py-4 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out`}>
+                        {link.text}
+                        </li>
+                    ))}
+                    </ul>
+
                     <div className="flex justify-center">
                      <button className="lg:hidden xl:hidden 2xl:hidden text-[14px] sm:text-2xl border border-white hover:bg-[#96449B] hover:border-[#96449B] hover:text-slate-300 rounded-md uppercase py-3 px-6 sm:py-4 sm:px-8">Agendar</button>
                     </div>
@@ -81,21 +82,22 @@ export default function Navbar() {
                     <span className={`text-[12px] md:text-[15px] lg:text-[15px]  xl:text-[15px] 2xl:text-2xl  ${poppins.className}`}>Agencia Digital</span>
                     
                 </div>
-                <div className="flex items-center gap-x-14">
-                        <ul className={`hidden lg:flex xl:flex 2xl:flex flex-row gap-4 justify-between lg:text-[15px] xl:text-[15px] 2xl:text-[20px]  ${poppins.className} uppercase`}>
-                            <li className="hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out cursor-pointer">
-                                Portafolio
-                            </li> 
-                            <li className="hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out cursor-pointer">
-                                Servicios
-                            </li >
-                            <li className="hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out cursor-pointer">
-                                Como funciona
-                            </li>
-                            <li className="hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out cursor-pointer">
-                                Sobre nosotros
-                            </li>
-                        </ul>
+                <div 
+                    className="flex items-center gap-x-14"
+                    
+                >
+                    <ul className={`hidden lg:flex xl:flex 2xl:flex flex-row gap-6 justify-between lg:text-[15px] xl:text-[15px] 2xl:text-[20px] ${poppins.className} uppercase`}>
+                    {links.map((link, index) => (
+                        <motion.li 
+                            key={index} 
+                            className="hover:text-[#96449B] hover:transition hover:duration-200 hover:ease-in-out cursor-pointer"
+                            whileHover={{scale: 1.1}}
+                        >
+                        {link.text}
+                        </motion.li>
+                    ))}
+                    </ul>
+
 
                         <button className="hidden lg:flex xl:flex 2xl:flex border xl:text-[15px] 2xl:text-[20px] border-white rounded uppercase py-2 px-8 hover:bg-[#96449B] hover:border-[#96449B] transition duration-300  hover:text-slate-300">Agendar</button>
                     <button

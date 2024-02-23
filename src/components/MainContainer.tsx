@@ -1,9 +1,10 @@
 "use client"
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
-import React from 'react'
+import useScrollAnimation from '@/hooks/useScrollAnimation';
+
 
 const poppins = Poppins({
   weight: ['400', '700'],
@@ -13,17 +14,22 @@ const poppins = Poppins({
 })
 
 const MainContainer = () => {
-  return (
-    <section className="h-screen mt-12  md:mt-32 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4 px-6">
 
-    <motion.div
+  const { ref, controls, variants } = useScrollAnimation();
+
+
+  return (
+    <motion.section 
+      className="h-screen mt-12  md:mt-32 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4 px-6"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      transition={{ duration: 2, delay: 0.5 }}
+    >
+
+    <div
       className="max-w-auto w-auto lg:max-w-screen-lg rounded"
-      initial={{ opacity: 1, x: "-300%" }}
-      animate={{
-        x: "0",
-        position: "static",
-        transition: { duration: 0.7, delay: 0.8 },
-      }}
     >
       <article className="flex flex-col lg:flex-row lg:w-full lg:px-24 2xl:px-0 justify-center">
   
@@ -73,8 +79,8 @@ const MainContainer = () => {
           </div>
         </div>
       </article>
-    </motion.div>
-  </section>
+    </div>
+  </motion.section>
   )
 }
 

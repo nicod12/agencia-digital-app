@@ -1,8 +1,11 @@
+"use client"
+import { motion } from 'framer-motion';
 import { Poppins } from "next/font/google";
 import { FiTarget, FiEye,FiMonitor, FiEdit3, FiMessageSquare } from "react-icons/fi";
 import { BiPieChartAlt } from "react-icons/bi";
 import { HiOutlineArrowTrendingUp } from "react-icons/hi2";
 import { IoVideocamOutline } from "react-icons/io5";
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 
 const poppins = Poppins({
@@ -15,12 +18,22 @@ const poppins = Poppins({
 
 
 export const ServiceContainer = () => {
+
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
-    <section className="m-4 lg:h-screen flex flex-col justify-center">
-    <article className="text-center mt-12 lg:mt-0 ">
-      <h2 className="text-[18px] 2xl:text-[24px] font-bold">Nues<span className="relative pt-2 border-t-4 border-gradient-violet">tros servi</span>cios</h2>
-      <p className={`mt-2 px-8 py-2 text-[14px] 2xl:text-[16px] ${poppins.className}`}>Principales servicios que ofrecemos y desarrollamos para nuestros clientes</p>
-    </article>
+    <motion.section 
+      className="m-4 lg:h-screen flex flex-col justify-center"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      transition={{ duration: 2, delay: 0.5 }}
+    >
+      <article className="text-center mt-12 lg:mt-0 ">
+        <h2 className="text-[18px] 2xl:text-[24px] font-bold">Nues<span className="relative pt-2 border-t-4 border-gradient-violet">tros servi</span>cios</h2>
+        <p className={`mt-2 px-8 py-2 text-[14px] 2xl:text-[16px] ${poppins.className}`}>Principales servicios que ofrecemos y desarrollamos para nuestros clientes</p>
+      </article>
 
       <section className={`grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6 w-full sm:w-full md:w-[80%] md:mx-auto 2xl:w-[70%] mt-12 ${poppins.className}`}>
           <div className="flex flex-col lg:flex-row items-center justify-center bg-white text-black font-bold text-center gap-1 py-8 px-4 border-t-4 border-[#D35CB0] rounded">
@@ -63,7 +76,7 @@ export const ServiceContainer = () => {
           </div>
   
       </section>
-  </section>
+  </motion.section>
 
   )
 }

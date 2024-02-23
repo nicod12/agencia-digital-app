@@ -1,7 +1,10 @@
+"use client"
+import { motion } from 'framer-motion';
 import { PiHouse } from "react-icons/pi";
 import { RiUser3Line } from "react-icons/ri";
 import { AiOutlineWifi } from "react-icons/ai";
 import { Poppins } from "next/font/google";
+import useScrollAnimation from '@/hooks/useScrollAnimation';
 
 const poppins = Poppins({
   weight: ['400', '700'],
@@ -12,8 +15,18 @@ const poppins = Poppins({
 
 
 export const InfoClientContainer = () => {
+  
+  const { ref, controls, variants } = useScrollAnimation();
+
   return (
-<section className="flex flex-col justify-center lg:h-screen bg-white py-16 2xl:p-0">
+  <motion.section 
+    className="flex flex-col justify-center lg:h-screen bg-white py-16 2xl:p-0"
+    ref={ref}
+    initial="hidden"
+    animate={controls}
+    variants={variants}
+    transition={{ duration: 2, delay: 0.5 }}
+  >
   <h2 className="text-black text-center lg:text-start lg:ml-[350px] font-bold mb-12 2xl:mb-24 2xl:text-[26px]">
     <span className="text-[#5B47C0] pt-2 border-t-4 border-black">Para quién es</span> nuestro servicio?
   </h2>
@@ -52,7 +65,7 @@ export const InfoClientContainer = () => {
 </div>
 
 
-</section>
+</motion.section>
 
   )
 }
