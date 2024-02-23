@@ -28,6 +28,9 @@ export default function RootLayout({
           <section>
             <Navbar />
             {children}
+            <footer className="p-8">
+              <h2 className="text-[#5B47C0] text-sm sm:text-base md:sm:text-base lg:text-3xl font-bold text-center">Desarrolado por: <span className="text-white">@nsensedev</span></h2>
+            </footer>
           </section>
         </main>
       </body>

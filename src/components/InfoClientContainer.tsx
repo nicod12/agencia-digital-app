@@ -11,7 +11,7 @@ const poppins = Poppins({
 })
 
 
-export const AboutContainer = () => {
+export const InfoClientContainer = () => {
   return (
 <section className="flex flex-col justify-center lg:h-screen bg-white py-16 2xl:p-0">
   <h2 className="text-black text-center lg:text-start lg:ml-[350px] font-bold mb-12 2xl:mb-24 2xl:text-[26px]">

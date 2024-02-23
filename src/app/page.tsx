@@ -1,7 +1,11 @@
-import { AboutContainer } from "@/components/AboutContainer";
+
+import { InfoClientContainer } from "@/components/InfoClientContainer";
+import { AboutUs } from "@/components/AboutUs";
 import MainContainer from "@/components/MainContainer";
+import { OurJobs } from "@/components/OurJobs";
 import { SecondaryContainer } from "@/components/SecondaryContainer";
 import { ServiceContainer } from "@/components/ServiceCotainer";
+
 
 
 
@@ -11,10 +15,9 @@ export default function Home() {
       <MainContainer />
       <SecondaryContainer />
       <ServiceContainer />
-      <AboutContainer />
-      <section className="lg:h-screen">
-
-      </section>
+      <InfoClientContainer />
+      <OurJobs />
+      <AboutUs />
     </>
   );
 }
