@@ -45,8 +45,8 @@ export default function Navbar() {
                 transition={{duration: 0.5}}
                 exit={{ opacity: 0 }}
                >
-                   <div className="flex flex-col">
-                   <ul className={`grid grid-cols-1 items-center justify-center text-center text-[12px] sm:text-2xl md:sm:text-2xl px-10 py-4 ${poppins.className} uppercase`}>
+                   <div className="flex flex-col mx-auto">
+                   <ul className={`grid grid-cols-1 text-center text-[12px] sm:text-2xl md:sm:text-2xl px-10 py-4 ${poppins.className} uppercase`}>
                     {links.map((link, index) => (
                         <li key={index} className={`my-6 sm:my-4 sm:py-4 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out`}>
                             <ScrollLink
