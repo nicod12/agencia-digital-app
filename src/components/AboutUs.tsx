@@ -18,6 +18,7 @@ export const AboutUs = () => {
 
   return (
     <motion.section 
+      id='about'
       className="grid grid-cols-1 sm:grid-cols-1 lg:h-screen bg-[#5B47C0] pb-4 lg:p-0"
       ref={ref}
       initial="hidden"

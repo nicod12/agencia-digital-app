@@ -20,6 +20,7 @@ const MainContainer = () => {
 
   return (
     <motion.section 
+      id='home'
       className="h-screen mt-12  md:mt-32 xl:mt-28 2xl:mt-28 flex flex-col items-center py-4 px-6"
       ref={ref}
       initial="hidden"

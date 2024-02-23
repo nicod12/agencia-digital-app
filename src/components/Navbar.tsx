@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Poppins } from "next/font/google";
 import { FiAlignJustify } from "react-icons/fi";
 import { RiCloseLine } from "react-icons/ri";
@@ -24,17 +25,21 @@ export default function Navbar() {
     }
 
     const links = [
-        {href: "/", text: "Portafolio"},
-        {href: "/", text: "Servicios"},
-        {href: "/", text: "Como funciona"},
-        {href: "/", text: "Sobre nosotros"}
+        {href: "jobs", text: "Portafolio"},
+        {href: "services", text: "Servicios"},
+        {href: "how", text: "Como funciona"},
+        {href: "about", text: "Sobre nosotros"}
     ]
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     const mobileMenu = (
         <AnimatePresence>   
            {
             open && ( <motion.section 
-                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[300px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
+                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[250px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
                 initial={{ x: 300, opacity: 1 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{duration: 0.5}}
@@ -44,7 +49,14 @@ export default function Navbar() {
                    <ul className={`grid grid-cols-1 items-center justify-center text-center text-xl px-10 py-4 ${poppins.className} uppercase`}>
                     {links.map((link, index) => (
                         <li key={index} className={`my-6 sm:my-4 sm:py-4 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out`}>
-                        {link.text}
+                            <ScrollLink
+                                to={link.href}
+                                smooth={true}
+                                offset={-70} 
+                                duration={500}
+                            >
+                                {link.text}
+                            </ScrollLink>
                         </li>
                     ))}
                     </ul>
@@ -71,15 +83,26 @@ export default function Navbar() {
                 
             >
                 <div className="flex items-center font-bold">
+                <ScrollLink
+                        to={'home'}
+                        smooth={true}
+                        offset={-70} 
+                        duration={500}
+                    >
                     <Image 
                         width={60}
                         height={20}
-                        className="lg:w-20 xl:w-24 2xl:w-32 " 
+                        className="lg:w-20 xl:w-24 2xl:w-32 cursor-pointer" 
                         src="https://i.postimg.cc/QC1rdcMT/cooltext452634920191131.png"
                         alt="logo"
                         
                     />
-                    <span className={`text-[12px] md:text-[15px] lg:text-[15px]  xl:text-[15px] 2xl:text-2xl  ${poppins.className}`}>Agencia Digital</span>
+                </ScrollLink>        
+
+
+
+                        <span className={`text-[12px] md:text-[15px] lg:text-[15px]  xl:text-[15px] 2xl:text-2xl   ${poppins.className}`}>Agencia Digital</span>
+         
                     
                 </div>
                 <div 
@@ -93,7 +116,14 @@ export default function Navbar() {
                             className="hover:text-[#96449B] hover:transition hover:duration-200 hover:ease-in-out cursor-pointer"
                             whileHover={{scale: 1.1}}
                         >
-                        {link.text}
+                            <ScrollLink
+                                to={link.href}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                {link.text}
+                            </ScrollLink>
                         </motion.li>
                     ))}
                     </ul>

@@ -17,7 +17,8 @@ export  const SecondaryContainer = () => {
   const { ref, controls, variants } = useScrollAnimation();
 
   return (
-    <motion.section 
+    <motion.section
+      id='how' 
       className="flex flex-col justify-center bg-white  max-w-auto sm:max-w-full h-full lg:h-screen pb-10 w-auto px-6 relative"
       ref={ref}
       initial="hidden"

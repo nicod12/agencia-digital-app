@@ -20,6 +20,7 @@ export const OurJobs = () => {
 
   return (
     <motion.section 
+        id='jobs'
         className="pb-8 lg:h-screen lg:flex lg:flex-col lg:justify-center lg:p-0"
         ref={ref}
         initial="hidden"

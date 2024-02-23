@@ -22,7 +22,8 @@ export const ServiceContainer = () => {
   const { ref, controls, variants } = useScrollAnimation();
 
   return (
-    <motion.section 
+    <motion.section
+      id='services' 
       className="m-4 lg:h-screen flex flex-col justify-center"
       ref={ref}
       initial="hidden"
