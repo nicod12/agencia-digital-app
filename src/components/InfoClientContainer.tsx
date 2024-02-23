@@ -25,7 +25,7 @@ export const InfoClientContainer = () => {
     initial="hidden"
     animate={controls}
     variants={variants}
-    transition={{ duration: 2, delay: 0.5 }}
+    transition={{ duration: 0.5, delay: 0.5 }}
   >
   <h2 className="text-black text-center lg:text-start lg:ml-[350px] font-bold mb-12 2xl:mb-24 2xl:text-[26px]">
     <span className="text-[#5B47C0] pt-2 border-t-4 border-black">Para quién es</span> nuestro servicio?

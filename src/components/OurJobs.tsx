@@ -26,7 +26,7 @@ export const OurJobs = () => {
         initial="hidden"
         animate={controls}
         variants={variants}
-        transition={{ duration: 2, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
     >
         <article className="text-center lg:mb-14 ">
             <h2 className="text-[18px] mt-20 2xl:text-[24px] font-bold">Nue<span className="border-t-4 border-gradient-violet pt-2">stros trab</span>ajos</h2>

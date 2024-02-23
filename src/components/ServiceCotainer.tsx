@@ -29,7 +29,7 @@ export const ServiceContainer = () => {
       initial="hidden"
       animate={controls}
       variants={variants}
-      transition={{ duration: 2, delay: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
     >
       <article className="text-center mt-12 lg:mt-0 ">
         <h2 className="text-[18px] 2xl:text-[24px] font-bold">Nues<span className="relative pt-2 border-t-4 border-gradient-violet">tros servi</span>cios</h2>

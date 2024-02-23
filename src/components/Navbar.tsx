@@ -129,7 +129,7 @@ export default function Navbar() {
                     </ul>
 
 
-                        <button className="hidden lg:flex xl:flex 2xl:flex border xl:text-[15px] 2xl:text-[20px] border-white rounded uppercase py-2 px-8 hover:bg-[#96449B] hover:border-[#96449B] transition duration-300  hover:text-slate-300">Agendar</button>
+                        <button className="hidden lg:flex xl:flex 2xl:flex border xl:text-[15px] 2xl:text-[18px] border-white rounded uppercase py-1 px-6 hover:bg-[#96449B] hover:border-[#96449B] transition duration-300  hover:text-slate-300">Agendar</button>
                     <button
                       aria-label="icon"
                       type="button"

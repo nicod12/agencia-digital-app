@@ -24,7 +24,7 @@ export  const SecondaryContainer = () => {
       initial="hidden"
       animate={controls}
       variants={variants}
-      transition={{ duration: 2, delay: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
     >
       <div>
         <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full border-8 border-white shadow-sm p-4 text-white bg-gradient-to-tr from-[#664BC0] to-[#B155B5] text-lg 2xl:text-xl"><FaArrowDownLong /></span>
