@@ -39,14 +39,14 @@ export default function Navbar() {
         <AnimatePresence>   
            {
             open && ( <motion.section 
-                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[250px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
+                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[250px] sm:w-[350px] md:w-[350px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
                 initial={{ x: 300, opacity: 1 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{duration: 0.5}}
                 exit={{ opacity: 0 }}
                >
                    <div className="flex flex-col">
-                   <ul className={`grid grid-cols-1 items-center justify-center text-center text-xl px-10 py-4 ${poppins.className} uppercase`}>
+                   <ul className={`grid grid-cols-1 items-center justify-center text-center text-[15px] sm:text-2xl md:sm:text-2xl px-10 py-4 ${poppins.className} uppercase`}>
                     {links.map((link, index) => (
                         <li key={index} className={`my-6 sm:my-4 sm:py-4 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out`}>
                             <ScrollLink
