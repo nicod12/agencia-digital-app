@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 
 
-export const ServiceComp = () => {
+export const ServiceContainer = () => {
   return (
     <section className="m-4 lg:h-screen flex flex-col justify-center">
     <article className="text-center mt-12 lg:mt-0 ">

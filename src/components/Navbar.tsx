@@ -59,11 +59,11 @@ export default function Navbar() {
     )
     return (
         <nav 
-            className="shadow-md lg:shadow-none lg:py-4"
+            className="shadow-md lg:py-4"
           
         >
             <motion.section 
-                className="flex justify-between fixed lg:static top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-4 sm:px-12 lg:px-30"
+                className="flex justify-between fixed  top-0 bg-[#121212] lg:top-0 left-0 right-0 z-50  px-4 sm:px-12 lg:px-30"
                 initial={{ opacity: 1, y: "-300%" }}
                 animate={{ y: "0",}}
                 transition={{duration: 0.5, delay:0.2}}

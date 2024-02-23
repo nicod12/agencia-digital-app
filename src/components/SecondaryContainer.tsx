@@ -34,7 +34,7 @@ export  const SecondaryContainer = () => {
               Esto te dará más tiempo para enfocarte en las áreas de tu negocio que solo tú puedes hacer, 
               mientras nosotros trabajamos en mantener a tus clientes bien informados y satisfechos con tu presencia digital.
             </p>
-            <button className="text-white z-30 font-bold mt-6 text-[15px] bg-gradient-to-r hover:bg-gradient-to-r from-[#664BC0] hover:from-[#5a5697] to-[#B155B5] hover:to-[#98439b] hover:transition hover:duration-500 hover:text-slate-300 uppercase py-3 px-8">Saber más</button>
+            <button className="text-white z-30 font-bold mt-6 text-[15px] bg-gradient-to-r hover:bg-gradient-to-r from-[#664BC0] hover:from-[#5a5697] to-[#B155B5] hover:to-[#98439b] hover:transition hover:duration-500 hover:text-slate-300 uppercase py-3 px-8 rounded">Saber más</button>
             <div className="absolute inset-0 overflow-hidden rounded-md group-hover:shadow-2xl">
               <div className="absolute -bottom-4 right-0 bg-violet-600 opacity-30 w-32 h-32 rounded-full blur-2xl"></div>
             </div>
