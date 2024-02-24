@@ -35,21 +35,21 @@ export const OurJobs = () => {
 
         <section className="flex flex-col mt-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
-                <Image
+                <img
                     src="https://i.postimg.cc/pLCfQnBP/28176b26edd31e3143469a238fa15e02.jpg"
                     alt="img"
                     width={300}
                     height={200}
                     className="w-60 sm:w-72 md:w-72 lg:w-72 xl:w-80 2xl:w-96 h-52 border border-fuchsia-100 rounded-sm shadow-md shadow-slate-600"
                 />
-                                <Image
+                                <img
                     src="https://i.postimg.cc/4dD6JYtt/7c6eaa69ec3d1b390be25c6a9f45e7ca.jpg"
                     alt="img"
                     width={300}
                     height={200}
                     className="w-60 sm:w-72 md:w-72 lg:w-72 xl:w-80 2xl:w-96  h-52 border border-fuchsia-100 rounded-sm shadow-md shadow-slate-600"
                 />
-                                <Image
+                                <img
                     src="https://i.postimg.cc/fWCj9Rxc/9448924f2f66c8a816003e32fbcdcb06.jpg"
                     alt="img"
                     width={300}

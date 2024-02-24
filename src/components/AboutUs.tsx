@@ -27,7 +27,7 @@ export const AboutUs = () => {
       transition={{ duration: 0.5, delay: 0.5 }}
     >
     <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center mt-4 lg:px-40 2xl:px-48">
-      <Image
+      <img
         src="https://i.postimg.cc/4350Ygq4/laptop.webp"
         alt="laptop"
         width={400}

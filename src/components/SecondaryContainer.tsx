@@ -31,7 +31,7 @@ export  const SecondaryContainer = () => {
       </div>
       <article className="lg:flex lg:items-center lg:px-20 2xl:px-32">
         <div className="flex flex-col items-center py-6 lg:py-0">
-            <Image
+            <img
               src="https://i.postimg.cc/HkRvSZjM/flecha.png"
               width={100}
               height={20}

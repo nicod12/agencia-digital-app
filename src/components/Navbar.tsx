@@ -89,7 +89,7 @@ export default function Navbar() {
                         offset={-70} 
                         duration={500}
                     >
-                    <Image 
+                    <img 
                         width={60}
                         height={20}
                         className="lg:w-20 xl:w-24 2xl:w-32 cursor-pointer" 

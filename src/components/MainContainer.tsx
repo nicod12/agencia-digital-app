@@ -1,6 +1,5 @@
 "use client"
 import { motion } from 'framer-motion';
-import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { FiTrendingUp, FiSettings, FiPenTool  } from "react-icons/fi";
 import useScrollAnimation from '@/hooks/useScrollAnimation';
@@ -70,7 +69,7 @@ const MainContainer = () => {
           </div>
   
           <div className="absolute hidden  lg:static lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
-            <Image
+            <img
               width={400}
               height={400}
               className="w-[250px] h-auto lg:w-[400px] "
