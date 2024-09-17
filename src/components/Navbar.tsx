@@ -72,7 +72,7 @@ export default function Navbar() {
     )
     return (
         <nav 
-            className="shadow-md lg:py-4"
+            className="shadow-md "
           
         >
             <motion.section 

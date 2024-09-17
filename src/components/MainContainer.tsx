@@ -68,15 +68,7 @@ const MainContainer = () => {
            </div>
           </div>
   
-          <div className="absolute hidden  lg:static lg:flex w-1/2   lg:bg-[#6244C6] lg:rounded-t-full">
-            <img
-              width={400}
-              height={400}
-              className="w-[250px] h-auto lg:w-[400px] "
-              src="https://i.postimg.cc/ht22zSyt/buisness.png"
-              alt="Imagen de la tarjeta"
-            />
-          </div>
+
         </div>
       </article>
     </div>
