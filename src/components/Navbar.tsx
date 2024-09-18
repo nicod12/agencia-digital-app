@@ -31,6 +31,7 @@ export default function Navbar() {
     scroll.scrollToTop();
   };
 
+<<<<<<< HEAD
   const mobileMenu = (
     <AnimatePresence>
       {open && (
@@ -40,6 +41,47 @@ export default function Navbar() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           exit={{ opacity: 0 }}
+=======
+    const mobileMenu = (
+        <AnimatePresence>   
+           {
+            open && ( <motion.section 
+                className={`lg:hidden flex flex-col items-start justify-items-start  fixed top-[40px] ${open ? "right-0 shadow-lg  " : ""}  w-[250px] sm:w-[350px] md:w-[350px] h-[100vh] pt-[40px] pl-[10px] bg-[#1a1818] `}
+                initial={{ x: 300, opacity: 1 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{duration: 0.5}}
+                exit={{ opacity: 0 }}
+               >
+                   <div className="flex flex-col mx-auto">
+                   <ul className={`grid grid-cols-1 text-center text-[12px] sm:text-2xl md:sm:text-2xl px-10 py-4 ${poppins.className} uppercase`}>
+                    {links.map((link, index) => (
+                        <li key={index} className={`my-6 sm:my-4 sm:py-4 border-b border-[#96449B] hover:bg-[#96449B] hover:rounded hover:text-slate-200 hover:transition hover:duration-200 hover:ease-in-out`}>
+                            <ScrollLink
+                                to={link.href}
+                                smooth={true}
+                                offset={-70} 
+                                duration={500}
+                            >
+                                {link.text}
+                            </ScrollLink>
+                        </li>
+                    ))}
+                    </ul>
+
+                    <div className="flex justify-center">
+                     <button className="lg:hidden xl:hidden 2xl:hidden text-[14px] sm:text-2xl border border-white hover:bg-[#96449B] hover:border-[#96449B] hover:text-slate-300 rounded-md uppercase py-3 px-6 sm:py-4 sm:px-8">Agendar</button>
+                    </div>
+                   </div>
+               </motion.section>)
+           }
+     </AnimatePresence>
+      
+    )
+    return (
+        <nav 
+            className="shadow-md "
+          
+>>>>>>> 99b131aba5def8f7ce1b9eb93649ce821ccc60b3
         >
           <div className="flex flex-col mx-auto">
             <ul

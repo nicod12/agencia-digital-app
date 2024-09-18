@@ -34,6 +34,7 @@ const MainContainer = () => {
               <p
                 className={`text-white text-[14px] xl:text-[16px] mb-4 ${poppins.className}`}
               >
+<<<<<<< HEAD
                 Utilizamos nuestro pensamiento estratégico para ayudar en la
                 toma de decisiones de tu negocio
               </p>
@@ -81,4 +82,38 @@ const MainContainer = () => {
 };
 
 export default MainContainer;
+=======
+                Agendar un meeting
+              </button>
+              <section className="mt-4 lg:mt-20 xl:mt-20 2xl:mt-20 py-4 flex flex-col md:flex-row lg:flex-row gap-7">
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiTrendingUp />
+                  </span>
+                  <h2 className="ml-2">Más Resultados</h2>
+                </div>
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiSettings />
+                  </span>
+                  <h2 className="ml-2">Más Estrategia </h2>
+                </div>
+                <div className="flex items-center">
+                  <span className="p-2 text-2xl inline-block bg-gray-700 rounded">
+                    <FiPenTool />
+                  </span>
+                  <h2 className="ml-2">Más Desing</h2>
+                </div>
+              </section>
+           </div>
+          </div>
+  
+
+        </div>
+      </article>
+    </div>
+  </motion.section>
+  )
+}
+>>>>>>> 99b131aba5def8f7ce1b9eb93649ce821ccc60b3
 
